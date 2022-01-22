@@ -15,10 +15,12 @@
     const $container = document.querySelector('#container');
     console.log($container);
 
-    let $heading = document.createElement('h1');
+    const $heading = document.createElement('h1');
     console.log($heading);
 
-    $heading = document.createTextNode('Hello World!');
+    const $heading2 = document.createTextNode('Hello World!');
+
+    $heading.appendChild($heading2);
 
     $container.appendChild($heading);
   </script>
